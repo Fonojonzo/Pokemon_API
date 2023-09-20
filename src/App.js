@@ -17,7 +17,7 @@ function App() {
   }
 
   useEffect(() => {
-    loadAPI('mewtwo'); // Carrega um Pokémon inicialmente
+      loadAPI('pikachu');// Carrega um Pokémon inicialmente
   }, []);
 
   const handleSearch = () => {
@@ -45,10 +45,10 @@ function App() {
           <div>ID: {pokemon.id}</div>
           <div>Peso: {pokemon.weight / 10}kg</div>
           <div>Altura: {pokemon.height / 10}m</div>
-          <div>Tipo: {pokemon.types[0].type.name}</div>
-          <div>Vida: {pokemon.stats[0].base_stat}</div>
-          <div>Ataque: {pokemon.stats[1].base_stat}</div>
-          <div>Defesa: {pokemon.stats[2].base_stat}</div>
+          <div>Vida: {pokemon.stats && pokemon.stats[0] ? pokemon.stats[0].base_stat : 'Nenhum'}</div>
+          <div>Ataque: {pokemon.stats && pokemon.stats[1] ? pokemon.stats[1].base_stat : 'Nenhum'}</div>
+          <div>Defesa: {pokemon.stats && pokemon.stats[2] ? pokemon.stats[2].base_stat : 'Nenhum'}</div>
+      
       </div>
     </div>
   );

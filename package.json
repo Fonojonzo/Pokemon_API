@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Fonojonzo.github.io/Pokemon_API",
+  "homepage": "https://fonojonzo.github.io/Pokemon_API",
   "name": "pokedex",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
